@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Falko - Home</title>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+
+
+<body>
+
+	<!-- HEADER -->
+	<header>
+		<div class="container-fluid" id="top-bar">
+			<!-- LOGO -->
+			<div class="col-lg-4">
+				<a href="Home.html"><img src="Images/Logo-ex.png" id="logo" alt="Falko"></a>
+			</div>
+	    	<!-- MENU -->
+	    	<div class="col-lg-8">
+				<nav>
+					<ul>
+						<li class="col-lg-3" id="home-link"><a href="home.html">Home</a></li>
+						<li class="col-lg-3"id="goods-link"><a href="goods.html">Goods</a></li>
+						<li class="col-lg-3" id="gallery-link"><a href="gallery.html">Gallery</a></li>
+						<li class="col-lg-3" id="falko-link"><a href="falko.html">Falko</a></li>
+					</ul>
+				</nav>	
+			</div>
+		</div>
+
+        <div class="header-contents">
+        	<h1>Welcome to Falko Konditormeister</h1>
+
+        	<h4>Konditormeister der; ~s, ~
+				   /kɔnˈdi:to:aˈmaistɐ/
+				the highest state qualification for a pastry chef in Germany; a master pastry chef.</h4>
+		</div> <!-- end header-contents -->
+    </header>
+
+
+    <div class="container" id="info">
+    	<div class="col-lg-4">
+    		<div id="circle-left">
+				<h5>Hours</h5>
+				<hr>
+		    	<ul class="list-unstyled">
+		    		<li>Monday Closed</li>
+		    		<li>Tuesday Closed</li>
+		    		<li>Wednesday 10am-6pm</li>
+		    		<li>Thursday 10am-6pm</li>
+		    		<li>Friday 10am-6pm</li>
+		    		<li>Saturday 8.30am-6pm</li>
+		    		<li>Sunday 9.30am-6pm</li>	
+		    	</ul>
+		    </div>
+		</div>
+
+		<div class="col-lg-4">
+			<div id="circle-center">
+				<span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
+				<ul class="list-unstyled">
+					<li>Locally grown produce</li>
+					<li>Our marzipan is imported from Germany</li>
+				</ul>
+		    </div> 
+		</div>
+
+	    <div class="col-lg-4">
+	    	<div id="circle-right">
+				<h5>Today's bread</h5>
+				<hr>
+				<ul class="list-unstyled">
+					<li>House Bread (Hausbrot)</li>
+					<li>Multigrain Bread (Mehrkornbrot)</li>
+				</ul>
+			</div> 
+		</div> 
+	</div>
+
+
+
+	<!-- MAP -->
+	<div>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize () {
+				var mapProp = {
+					center:new google.maps.LatLng(55.935537,-3.209888),
+	                zoom:17,
+	                mapTypeId:google.maps.MapTypeId.ROADMAP,
+	                scrollwheel: false
+            	};
+            	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+    		}
+   			google.maps.event.addDomListener(window, 'load', initialize);
+   		 </script>
+
+   		 <div id="googleMap" style="height:550px;"></div>
+	</div> <!-- end banner -->
+
+
+	<!-- FOOTER -->
+	<footer>
+
+		<div class="container">
+			<div class="col-lg-4">
+				<h3 class="text-center">Contact us</h3>
+				<p><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 185 Bruntsfield Place, Edinburgh EH10 4DG</p>
+				<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 0131 656 0763</p>
+				<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a id="email-link" href="mailto:edinburgh@falko.co.uk">edinburgh@falko.co.uk</a></p>
+			</div> 
+
+			<div class="col-lg-4">
+				<h3 class="text-center">Find us on</h3>
+				<ul class="list-inline text-center">
+					<li><a href="#"><img src="Images/facebook-icon.png" alt="Facebook"></a></li>
+					<li><a href="#"><img id="twitter-image" src="Images/Twitter-icon.png" alt="Twitter"></a></li>
+					<li><a href="Hunde"><img src="Images/google-plus-icon.png" alt="Google+"></a></li>
+				</ul>
+			</div>
+
+			<div class="col-lg-4">
+				<h3 class="text-center">Hunde willkommen!</h3>
+				<img src="Images/Hunde.png" class="center-block" alt="Hunde">
+			</div> 
+		</div> <!-- end container -->
+
+		<div id="copyright" class="text-center">
+			<p>&copy; Falko.</p>
+		</div> <!-- end copyright -->
+
+	</footer>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
