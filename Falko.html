@@ -1,42 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Falko</title>
 
-	<link rel="stylesheet" href="css/normalize.css">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Falko</title>
+	<link href='http://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 </head>
 
+
+
 <body>
 
 	<!-- HEADER -->
-	<header class="header-Home">
-		<div class="container">
-			<div class="top-container">
-				<hr class="header-hr">
-
-				<!-- LOGO -->
-				<a href="Home.html" class="logo"><img src="Images/Logo-ex.png" alt="Falko"></a>
-
-		    	<!-- MENU -->
+	<header>
+		<div class="container-fluid" id="top-bar">
+			<!-- LOGO -->
+			<div class="col-lg-4">
+				<a href="Home.html"><img src="Images/Logo-ex.png" id="logo" alt="Falko"></a>
+			</div>
+	    	<!-- MENU -->
+	    	<div class="col-lg-8">
 				<nav>
 					<ul>
-						<li><a href="home.html">Home</a></li>
-						<li><a href="goods.html">Goods</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="falko.html">Falko</a></li>
+						<li id="home-link"><a href="home.html">Home</a></li>
+						<li id="goods-link"><a href="goods.html">Goods</a></li>
+						<li id="gallery-link"><a href="gallery.html">Gallery</a></li>
+						<li id="falko-link"><a href="falko.html">Falko</a></li>
 					</ul>
 				</nav>	
-            </div> <!--end top-container -->
+			</div>
+		</div>
 
-            <hr class="header-hr">
-
-            <div class="header-contents">
-            	<h1>Falko Konditormeister</h1>
-			</div> <!-- end header-contents -->
-        </div> <!-- end container -->
+		 <div class="header-contents">
+        	<h1>Falko Konditormeister </h1>
+		</div> <!-- end header-contents -->
     </header>
 
 
@@ -52,57 +58,77 @@
     		<p>You can visit us at either of our two Konditorei shops in Edinburgh or Gullane, East Lothian. We also attend Edinburgh Farmers' Market each week and Balerno Farmers' Market on the second Saturday of each month. See you there?</p>
 
     	</div> <!-- end Second-Container -->
-    </div> <!-- end Main-Container -->
 
-    <div class="Footer-Banner">
+        <div id="square-info">
+        	<div>
+	    		<div id="square-left" class="square">
+		    		<h4>Bruntsfield Konditormeister, 185 Bruntsfield Place, Edinburgh EH10 4DG</h4>
+			    </div>
 
-    		<h6>Bruntsfield Konditormeister, 185 Bruntsfield Place, Edinburgh EH10 4DG</h6>
-			<h6>Gullane Cafe, 1 Stanley Street, Gullane, East Lothian EH31 2AD</h6>
-			<h6>Edinburgh Farmer's Market, Castle Terrace, Edinburgh. Every Saturday</h6>
-			<h6>West Linton Farmer's Market, Saturday 9.30am-12.30pm Only on the First Saturday each month</h6>
-			<h6>Balerno Farmer's Market, Saturday 9am-1pm Only on the Second Saturday of every month</h6>
-			<h6>Haddington Farmer's Market, Saturday: 9am-1pm Only on the Last Saturday of each month</h6>
+	    		<div id="square-center" class="square">
+		    		<h4>Gullane Cafe, 1 Stanley Street, Gullane, East Lothian EH31 2AD</h4>
+			    </div>
 
-	</div>
+	    		<div id="square-right" class="square">
+		    		<h4>Edinburgh Farmer's Market, Castle Terrace, Edinburgh. Every Saturday</h4>
+			    </div>
+			</div>
+
+			<div>
+	    		<div id="square-left1" class="square">
+		    		<h4>West Linton Farmer's Market, Saturday 9.30am-12.30pm Only on the First Saturday each month</h4>
+			    </div>
+
+	    		<div id="square-center1" class="square">
+		    		<h4>Balerno Farmer's Market, Saturday 9am-1pm Only on the Second Saturday of every month</h4>
+			    </div>
+
+	    		<div id="square-right1" class="square">
+		    		<h4>Haddington Farmer's Market, Saturday: 9am-1pm Only on the Last Saturday of each month</h4>
+			    </div>
+			</div>
+		</div> 
+	</div> 
+
 
 
 	
 
 	<!-- FOOTER -->
 	<footer>
-	  <hr class="header-hr">
+
 		<div class="container">
-			<div class="row">
-				<div class="column-first">
-					<h3>Contact us</h3>
+			<div class="col-lg-4">
+				<h3 class="text-center">Contact us</h3>
+				<p><span class="glyphicon glyphicon-home" aria-hidden="true"></span> 185 Bruntsfield Place, Edinburgh EH10 4DG</p>
+				<p><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> 0131 656 0763</p>
+				<p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a id="email-link" href="mailto:edinburgh@falko.co.uk">edinburgh@falko.co.uk</a></p>
+			</div> 
 
-					<p>Address: 185 Bruntsfield Place, Edinburgh EH10 4DG</p>
-					<p>Phone: 0131 656 0763</p>
-					<p>Email: edinburgh@falko.co.uk</p>
-				</div> <!-- end column-first -->
+			<div class="col-lg-4">
+				<h3 class="text-center">Find us on</h3>
+				<ul class="list-inline text-center">
+					<li><a href="#"><img src="Images/facebook-icon.png" alt="Facebook"></a></li>
+					<li><a href="#"><img id="twitter-image" src="Images/Twitter-icon.png" alt="Twitter"></a></li>
+					<li><a href="Hunde"><img src="Images/google-plus-icon.png" alt="Google+"></a></li>
+				</ul>
+			</div>
 
-				<div class="column-second">
-					<h4>Hunde willkommen!</h4>
-
-					<img src="Images/Hunde.png" alt="Hunde">
-				</div> <!-- end column-second -->
-
-				<div class="column-third">
-					<h5>Find us on</h5>
-
-					<ul class="social">
-						<li><a href="#"><img src="Images/facebook-icon.png" alt="Facebook"></a></li>
-						<li><a href="#"><img src="Images/Twitter-icon.png" alt="Twitter"></a></li>
-						<li><a href="Hunde"><img src="Images/google-plus-icon.png" alt="Google+"></a></li>
-					</ul>
-				</div> <!-- end column-third -->
-			</div> <!-- end row -->
+			<div class="col-lg-4">
+				<h3 class="text-center">Hunde willkommen!</h3>
+				<img src="Images/Hunde.png" class="center-block" alt="Hunde">
+			</div> 
 		</div> <!-- end container -->
 
-		<div class="copyright">
+		<div id="copyright" class="text-center">
 			<p>&copy; Falko.</p>
 		</div> <!-- end copyright -->
+
 	</footer>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 </body>
 

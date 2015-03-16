@@ -1,21 +1,19 @@
 /* TYPOGRAPHY */
 
 body {
-	  background-image: url(../Images/GROOVE.png);
+	  background-image: url(../Images/wood.jpg);
 	  color: white;
 }
 
 h1 {
 	color: #FFFFFF;
+	font-family: 'Aclonica', sans-serif;
 }
 
-
-h2,
-h4 {
-	color: #FFFFFF;
+h2 {
 	position: center;
-	margin-left: 30px;
-
+	margin-top: 60px;
+	color: #424242;
 }
 
 h6 {
@@ -41,36 +39,29 @@ a {
 
 /* GENERAL LAYOUT RULES */
 
-.column-one {
-	width: 325px;
-
-	padding-top: 65px;
-
-	float: left;
+#picture-container {
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
-.column-two {
+#menu-picture, #cakes-picture, #bread-picture {
+	position: inherit;
+	background: rgba(42, 44, 43, 0.6);
+	color: #fff;
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 25px;
 	width: 325px;
-
-	padding-top: 65px;
-
-	float: right; 
+	height: 430px;
+	padding-top: 100px;
+	margin-top: -430px;
+	visibility: hidden;
 }
 
-.column-three {
-	width: 325px;
-
-	padding-top: 65px;
-
-	float: right;
-}
-
-.column-four {
-	width: 325px;
-
-	padding-top: 65px;
-
-	float:left;
+.hover-pic:hover #menu-picture,
+.hover-pic:hover #cakes-picture,
+.hover-pic:hover #bread-picture {
+	visibility: visible;
 }
 
 .Second-Container {
@@ -80,6 +71,16 @@ a {
 	padding-bottom: 200px;
 	text-align: center;
 	background-color: none;
+	background-image: url(../images/Chef.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.Second-Container p {
+	margin-left: 280px;
+	margin-right: 280px;
+	margin-top: 30px;
+	color: #424242;
 }
 
 .Footer-Banner {
@@ -87,8 +88,9 @@ a {
 	padding-top: 200px;
 }
 
-#circle-left {
-	
+#circle-left,
+#circle-center,
+#circle-right {
 	background-color: #543f42;
 	height: 300px;
 	width: 300px;
@@ -99,29 +101,14 @@ a {
 }
 
 #circle-center {
-	
 	background-color: #ffa666;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	text-align: center;
-	vertical-align: middle;
-	display: table-cell;
 }
 
 #circle-right {
-	
 	background-color: #c24848;
-	height: 300px;
-	width: 300px;
-	border-radius: 50%;
-	text-align: center;
-	vertical-align: middle;
-	display: table-cell;
 }
 
 #home-link {
-	
 	background-color: rgb(66, 58, 48);
 }
 
@@ -139,15 +126,9 @@ a {
 	background-color: rgb(75, 0, 6);
 }
 
-
-
-.glyphicon-tree-deciduous {
-	margin-left: 20px;
-}
-
 #info {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 #circle-left hr, #circle-right hr {
@@ -161,8 +142,8 @@ a {
 
 /* HEADER */
 header {
-	background: url(../Images/CakeBk.jpg);
-    width: 100%;  
+	background: url(../Images/CakeBk.jpg); 
+
 }
 
 #top-bar {
@@ -177,10 +158,9 @@ nav {
 }
 
 nav ul {
-	padding-top: 30px;
+	padding-top: 50px;
 	list-style-type: none;
 	display: inline-table;
-	
 }
 
 nav ul li {
@@ -193,6 +173,7 @@ nav ul li a {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 20px;
+	font-family: 'Aclonica', sans-serif;
 }
 
 .header-contents {
@@ -203,10 +184,10 @@ nav ul li a {
 	background-color: rgba(42, 44, 43, 0.6);
 } 
 
-
-body {
-	background-image: url(../images/GROOVE.png)
+#Contents {
+	padding-top: 70px;
 }
+
 
 footer {
 	background-color: rgba(42, 44, 43, 0.6);
@@ -217,10 +198,8 @@ footer h3 {
 	font-family: 'Kaushan Script', cursive;
 }
 
-
-.glyphicon {
-	color: white;
-	padding-right: 12px;
+footer .glyphicon {
+	padding-right: 5px;
 }
 
 h3, p {
@@ -234,12 +213,95 @@ h3, p {
 }
 
 #email-link {
-	color: red;
+	color: #58ACFA;
 }
 
 #twitter-image {
 	padding-left: 5px;
-	padding-right: 5px;hyyj
+	padding-right: 5px;
+}	
+
+.square {
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	padding-bottom: 50px;
+	padding: 10px;
+	width: 33%;
 }
+
+#square-left h4,
+#square-center h4,
+#square-right h4,
+#square-left1 h4,
+#square-center1 h4,
+#square-right1 h4 {
+	padding: 40px 10px;
+	border-radius: 25px
+}
+
+
+#square-left h4 {
+	background-color: #c24848;
+}
+
+#square-center h4 {
+	background-color: #F5DA81;
+}
+
+#square-right h4 {
+	background-color: rgb(75, 0, 6);
+}
+
+#square-left1 h4 {
+	background-color: #ffa666;
+}
+
+#square-center1 h4 {
+	background-color: #543f42;
+}
+
+#square-right1 h4 {
+	background-color: rgb(66, 58, 48);
+}
+
+#square-info {
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#description {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 20px;
+	margin-left: 335px;
+	margin-bottom: 30px;
+	margin-top: 50px;
+}
+
+.item img {
+	margin-left: 270px;
+}
+
+#glyphicon {
+	position: absolute;
+	top: 50%;
+	font-size: 30px;
+}
+
+#carousel-example-generic {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#gallery {
+	position: center;
+}
+
+.carousel-control {
+	margin-top: -50px;
+	margin-bottom: -50px;
+}
+
 
 
